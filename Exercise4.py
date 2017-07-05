@@ -13,8 +13,7 @@ def divisorsList():
     try:
         check = int(input("Enter a number: "))
         listRange = list(range(1, check + 1))
-
-        print( [number for number in listRange if number % check == 0] )
+        print([ number for number in listRange if check % number == 0 ])
     except Exception as e:
         print(str(e))
 
